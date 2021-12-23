@@ -1,0 +1,32 @@
+<div class="container">
+  <!--навигационная панель-->
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Summary page</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="navigator" routerLinkActive="active" >Navigator page</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--контент-->
+  <router-outlet></router-outlet>
+
+  <!--подвал-->
+  <div class="row fixed-bottom mt-5">
+    <div class="col-md-12">
+      <div class="card-footer bg-light">
+        <div class="text-center">
+          Kurennoi Artem
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

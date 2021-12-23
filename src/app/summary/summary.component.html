@@ -1,0 +1,18 @@
+<div class="row justify-content-center">
+  <div class="col-md-10 text-center mt-2">
+    <heading-card [allCard]="countAllCard"></heading-card>
+  </div>
+  <div class="col-md-5 mt-2">
+    <app-card  [count]="countIncome" type="Income" [tab]="0"></app-card>
+  </div>
+  <div class="col-md-5 mt-2">
+    <app-card [count]="countInvestments" type="Investments" [tab]="1"></app-card>
+  </div>
+  <div class="col-md-5 mt-2">
+    <app-card [count]="countOutcome" type="Outcome" [tab]="2"></app-card>
+  </div>
+  <div class="col-md-5 mt-2">
+    <app-card [count]="countLoans" type="Loans" [tab]="3"></app-card>
+  </div>
+
+</div>
